@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #BABD8C;
+    --secondary-color: 
+    --dark-color: 
+    --light-color: 
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* this wrapper styling will give all divs with wrapper class a margin on left and right*/
+.wrapper {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-nav {
+    background-color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: #E9DFCD;
+    color: #222;
+}
