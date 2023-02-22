@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #BABD8C;
+    --primary-color: #a4a77a;
     --secondary-color: 
     --dark-color: 
     --light-color: 
@@ -32,9 +32,27 @@ li a {
     padding: 20px;
     text-decoration: none;
     color: white;
+    font-size: large;
 }
 
 li a:hover {
     background-color: #E9DFCD;
     color: #222;
+}
+
+.image-banner {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    height: auto;
+}
+
+.image-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.text-banner {
+    position: absolute;
+    
 }

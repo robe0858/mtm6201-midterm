@@ -12,8 +12,8 @@
     <!------------------------------------
          TOP NAVIGATION AND HEADER 
         ------------------------------------>
-        
-    <div class="top-header">
+
+    <div class="header">
         <div class="main-nav">
             <div class="nav-items">
                 <ul>
@@ -23,7 +23,22 @@
                 </ul>
             </div>
         </div>
-    </div>
+        <div class="image-banner">
+            <picture>
+                <source srcset="images/mobile/low-resolution/baby-sloth-320_x_213.jpeg,
+                images/mobile/high-resolution/baby-sloth-759_x_506.jpeg 2x"
+                media="(max-width: 759px)">
+
+                <source srcset="images/desktop/low-resolution/baby-sloth-760_x_507.jpeg,
+                images/desktop/high-resolution/baby-sloth-1200_x_800.jpeg 2x"
+                media="(max-width: 1200px)">
+
+                <img src="images/baby-sloth.jpg" alt="placeholder">
+            </picture>
+            <div class="text-banner">
+                <h1>One With Sloths</h1>
+            </div>
+        </div>
     
 </body>
 </html>
