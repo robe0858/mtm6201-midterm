@@ -46,6 +46,7 @@ li a:hover {
     position: relative;
     max-width: 100%;
     height: auto;
+    overflow: hidden;
 
 }
 
@@ -62,7 +63,8 @@ li a:hover {
 
 .content-cards-outer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card {
@@ -75,7 +77,9 @@ li a:hover {
     margin: 20px;
     background-color: #a4a77a;
     padding-bottom: 40px;
+    flex: 1;
 }
+
 
 .about-card-img {
     width: 100%; 
@@ -107,4 +111,57 @@ li a:hover {
 .button:hover {
     background-color: var(--secondary-color);
     color: var(--dark-color);
+}
+
+.contact-card-img {
+    width: 100%;
+}
+
+.contact-card-img img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-card-header {
+    color: var(--light-color);
+}
+
+.contact-card-text {
+    text-align: center;
+    color: var(--light-color);
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 760px) {
+    .content-cards-outer {
+        flex-direction: row;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-items {
+        flex-grow: 1;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .image-banner img {
+        margin-top: -150px;
+        margin-bottom: -150px;
+      }
+
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: var(--light-color);
+    margin-top: 40px;
 }

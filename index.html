@@ -31,7 +31,7 @@
 
                 <source srcset="images/desktop/low-resolution/baby-sloth-760_x_507.jpeg,
                 images/desktop/high-resolution/baby-sloth-1200_x_800.jpeg 2x"
-                media="(max-width: 1200px)">
+                media="(max-width: 1600px)">
 
                 <img src="images/baby-sloth.jpg" alt="placeholder">
             </picture>
@@ -50,7 +50,15 @@
         <div class="wrapper content-cards-outer">
             <div class="card">
                 <div class="about-card-img">
-                    <img src="/images/sloth-2.jpg" alt="a photo of a sloth">
+                    <picture>
+                        <source srcset="images/mobile/low-resolution/sloth-2-320_x_213.jpeg,
+                        images/mobile/high-resolution/sloth-2-759_x_506.jpeg 2x"
+                        media="(max-width: 759px)">
+                        <source srcset="images/desktop/low-resolution/sloth-2-760_x_507.jpeg,
+                        images/desktop/high-resolution/sloth-2-1200_x_800.jpeg 2x"
+                        media="(max-width: 1600px)">
+                        <img src="/images/sloth-2.jpg" alt="a photo of a sloth">
+                    </picture>
                 </div>
                 <div class="about-card-header">
                     <h1>About Us</h1>
@@ -62,9 +70,38 @@
                     <a href="#" class="button">Learn More</a>
                 </div>
             </div>
-            
+            <div class="card">
+                <div class="contact-card-img">
+                    <picture>
+                        <source srcset="images/mobile/low-resolution/sloth-3-320_x_213.jpeg,
+                        images/mobile/high-resolution/sloth-3-759_x_506.jpeg 2x"
+                        media="(max-width: 759px)">
+                        <source srcset="images/desktop/low-resolution/sloth-3-760_x_507.jpeg,
+                        images/desktop/high-resolution/sloth-3-1200_x_800.jpeg 2x"
+                        media="(max-width: 1600px)">
+                        <img src="/images/sloth-3.jpg" alt="an image of a sloth">
+                    </picture>
+                </div>
+                <div class="contact-card-header">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="contact-card-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias architecto placeat illum tempora. Temporibus quas alias nulla dolores dignissimos deleniti, et eum repellat nihil tempore explicabo quos eligendi dicta fugit.</p>
+                </div>
+                <div class="contact-button">
+                    <a href="#" class="button">Get in touch</a>
+                </div>
+            </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                <p>&copy; Mikaela Roberts, 2023</p>
+                <p>All images courtesy of Envato Elements</p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
