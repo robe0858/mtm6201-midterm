@@ -46,6 +46,18 @@ li a:hover {
     color: var(--dark-color);
 }
 
+li a:active {
+    background-color: #E9DFCD;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.active-page {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
 
 .image-banner {
     position: relative;
@@ -53,6 +65,14 @@ li a:hover {
     height: auto;
     overflow: hidden;
 
+}
+
+a {
+    color: var(--light-color);
+}
+
+a:hover {
+    color: var(--dark-color);
 }
 
 /* ****************************
