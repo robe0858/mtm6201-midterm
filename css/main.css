@@ -257,7 +257,33 @@ a:hover {
 
 /* MEET THE TEAM */
 
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 759px;
+    margin: 20px;
+    padding-bottom: 40px;
+    flex: 1;
+}
 
+.team-card-img img {
+    border-radius: 50%;
+}
+
+.team-card-img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.team-card-img:hover {
+    transform: scale(1.01);
+}
+
+.team-card-content {
+    text-align: center;
+    color: var(--dark-color);
+}
 
 
 /* **********************************
