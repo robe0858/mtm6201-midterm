@@ -55,6 +55,12 @@ li a:hover {
 
 }
 
+/* ****************************
+        BUTTON STYLING 
+*******************************/
+
+
+
 /* *************************************
         HOME PAGE HEADER STYLING 
 ****************************************/
@@ -184,4 +190,24 @@ footer {
     padding: 20px;
     color: var(--light-color);
     margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
