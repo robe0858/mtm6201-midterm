@@ -18,6 +18,10 @@ body {
     margin: auto;
 }
 
+/*******************************************
+            NAVIGATION STYLING              
+******************************************* */
+
 .main-nav {
     background-color: var(--primary-color);
 }
@@ -42,6 +46,7 @@ li a:hover {
     color: var(--dark-color);
 }
 
+
 .image-banner {
     position: relative;
     max-width: 100%;
@@ -49,6 +54,10 @@ li a:hover {
     overflow: hidden;
 
 }
+
+/* *************************************
+        HOME PAGE HEADER STYLING 
+****************************************/
 
 .image-banner img {
     width: 100%;
@@ -132,6 +141,11 @@ li a:hover {
     margin-bottom: 20px;
 }
 
+
+/* **********************************
+            DESKTOP STYLING
+ *************************************/
+
 @media screen and (min-width: 760px) {
     .content-cards-outer {
         flex-direction: row;
@@ -157,7 +171,13 @@ li a:hover {
         margin-bottom: -150px;
       }
 
+
 }
+
+
+/* ***********************************
+            FOOTER STYLING 
+**************************************/
 
 footer {
     background-color: var(--primary-color);
