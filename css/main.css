@@ -285,6 +285,11 @@ a:hover {
     color: var(--dark-color);
 }
 
+.team-card-content-john {
+    text-align: center;
+    color: var(--dark-color)
+}
+
 
 /* **********************************
             DESKTOP STYLING
@@ -362,6 +367,27 @@ a:hover {
     .rehabilitate-card:hover {
         transform: scale(1.05);
     }
+
+    .team-card {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: none;
+    }
+
+    .team-card-content {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .team-card:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .team-card-content-john {
+        text-align: right;
+        margin-right: 20px;
+    }
+
 }
 
 
