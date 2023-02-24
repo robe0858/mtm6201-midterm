@@ -170,8 +170,8 @@ a:hover {
 *******************************/
 
 
-/* RESCUE CARDS */
-.rescue-card {
+/* RESCUE + RELEASE CARDS */
+.rescue-card, .release-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,32 +185,34 @@ a:hover {
     transition: transform 0.2s ease-in-out;
 }
 
-.rescue-card:hover {
+.rescue-card:hover, .release-card:hover {
     transform: scale(1.015);
 }
 
-.rescue-card-img {
+.rescue-card-img, .release-card-img {
     width: 100%; 
 }
 
-.rescue-card-img img {
+.rescue-card-img, .release-card-img, img {
     width: 100%;
     height: auto;
 }
 
-.rescue-card-text {
+.rescue-card-text, .release-card-text {
     text-align: center;
     color: var(--light-color);
     margin-bottom: 20px;
 }
 
-.rescue-card-header {
+.rescue-card-header, .release-card-header {
     color: var(--light-color);
 }
 
-.rescue-card-content {
+.rescue-card-content, .release-card-content {
     text-align: center;
 }
+
+/* REHABILITATE CARDS */
 
 .rehabilitate-card {
     display: flex;
@@ -253,7 +255,6 @@ a:hover {
     text-align: center;
 }
 
-/* REHABILITATE CARDS */
 
 /* **********************************
             DESKTOP STYLING
@@ -288,23 +289,23 @@ a:hover {
 
       /* ABOUT PAGE */
 
-    .rescue-card {
+    .rescue-card, .release-card {
         flex-direction: row;
         justify-content: space-between;
         max-width: none;
     }
 
-    .rescue-card-img {
+    .rescue-card-img, .release-card-img {
         max-width: 100%;
         height: auto;
         margin-right: 5%;
     }
 
-    .rescue-card-content, .rescue-card-text {
+    .rescue-card-content, .rescue-card-text, .release-card-content, .release-card-text {
         text-align: left;
     }
 
-    .rescue-card:hover {
+    .rescue-card:hover, .release-card:hover {
         transform: scale(1.05);
     }
 
