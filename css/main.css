@@ -255,6 +255,10 @@ a:hover {
     text-align: center;
 }
 
+/* MEET THE TEAM */
+
+
+
 
 /* **********************************
             DESKTOP STYLING
@@ -263,6 +267,10 @@ a:hover {
 @media screen and (min-width: 760px) {
 
     /* HOME PAGE + NAV */
+    .content-cards-outer {
+        flex-direction: row;
+    }
+    
     .about-cards-outer {
         flex-direction: column;
     }
