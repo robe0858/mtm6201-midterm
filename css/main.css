@@ -331,7 +331,7 @@ label {
     margin-top: 15px;
 }
 
-input, textarea {
+input {
     width: 100%;
     border: none;
     border-radius: 10px;
@@ -368,6 +368,20 @@ button[type="submit"] {
     color: var(--light-color);
 }
 
+.map-card {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px;
+    padding-bottom: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 5%;
+}
+
 /* **********************************
             DESKTOP STYLING
  *************************************/
@@ -375,6 +389,8 @@ button[type="submit"] {
 @media screen and (min-width: 760px) {
 
     /* HOME PAGE + NAV */
+
+    /* using flex-direction row to change the layout of the cards from a single-column to side-by-side row layout when the media screen is over 760px */
     .content-cards-outer {
         flex-direction: row;
     }
@@ -398,6 +414,7 @@ button[type="submit"] {
         justify-content: flex-end;
     }
 
+    /* this ensures that when the media screen is over 760px, the image crops slightly. This will make sure that the banner image isn't way too big when the media screen is over 760px, taking up most of the screen, and instead, the banner will stay cropped. */
     .image-banner img {
         margin-top: -150px;
         margin-bottom: -150px;
@@ -405,6 +422,8 @@ button[type="submit"] {
 
       /* ABOUT PAGE */
 
+
+      /* here, I decided to go with flex to change the layout within the cards themselves (the card content) from a single column to row direction so that the content is side by side when the media screen is larger than 760 px. */
     .rescue-card, .release-card {
         flex-direction: row;
         justify-content: space-between;
@@ -463,6 +482,26 @@ button[type="submit"] {
     .team-card-content-john {
         text-align: right;
         margin-right: 20px;
+    }
+
+    /* CONTACT PAGE */
+
+/* I decided to go with grid in this case in order to ensure that when the screen is desktop size, the single-column layout turns into a 2-column, 2-row layout. */
+    .contact-cards-outer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 5%;
+        margin: 20px;
+    }
+
+    .contact-card,
+    .contact-form,
+    .visiting-card,
+    .map-card {
+        width: 100%;
+        height: auto;
     }
 
 }
