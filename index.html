@@ -9,13 +9,22 @@
 </head>
 <body>
 
+    <!-- SKIP-LINKS -->
+    <div class="container">
+        <ul class="skip-links">
+            <li><a href="#main-nav">Skip to main navigation</a></li>
+            <li><a href="#main-content">Skip to main content</a></li>
+        </ul>
+    </div>
+
     <!------------------------------------
          TOP NAVIGATION AND HEADER 
         ------------------------------------>
 
-    <div class="header">
+   
+        <div class="header">
         <div class="main-nav">
-            <div class="nav-items">
+            <div role="navigation" class="nav-items" id="main-nav">
                 <ul>
                     <li><a href="#" class="active-page">Home</a></li>
                     <li><a href="/about.html">About</a></li>
@@ -46,7 +55,7 @@
          MAIN CONTENT 
         ------------------------------------>
 
-    <div class="main-content">
+    <div class="main-content" id="main-content">
         <div class="wrapper content-cards-outer">
             <div class="card">
                 <div class="about-card-img">
@@ -89,7 +98,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias architecto placeat illum tempora. Temporibus quas alias nulla dolores dignissimos deleniti, et eum repellat nihil tempore explicabo quos eligendi dicta fugit.</p>
                 </div>
                 <div class="contact-button">
-                    <a href="#" class="button">Get in touch</a>
+                    <a href="/contact.html" class="button">Get in touch</a>
                 </div>
             </div>
         </div>
