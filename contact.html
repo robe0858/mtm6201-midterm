@@ -47,16 +47,16 @@
             </div>
         </div>
 
-        <div class="main-content" id="contact-main-content">
+        <div class="main-content" id="contact-main-content" role="main">
             <div class="wrapper contact-cards-outer">
                 <div class="contact-card">
-                    <div class="contact-card-content">
-                        <h1>Jane Doe, CEO</h1>
-                        <p>janedoe@onewithsloths.com</p>
-                        <p>(123) 555 1234 ext. 123</p>
-                        <h1>John Doe, Conservation Officer</h1>
-                        <p>johndoe@onewithsloths.com</p>
-                        <p>(123) 555 1234 ext. 234</p>
+                    <div class="contact-card-content" itemscope itemtype="https://schema.org/Person">
+                        <h1 role="heading" itemprop="name">Jane Doe, CEO</h1>
+                        <p itemprop="email">janedoe@onewithsloths.com</p>
+                        <p itemprop="telephone">(123) 555 1234 ext. 123</p>
+                        <h1 role="heading" itemprop="name">John Doe, Conservation Officer</h1>
+                        <p itemprop="email">johndoe@onewithsloths.com</p>
+                        <p itemprop="telephone">(123) 555 1234 ext. 234</p>
                     </div>
                 </div>
                 <div class="contact-form" role="form">
@@ -77,13 +77,13 @@
                     </form>
                 </div>
                 <div class="visiting-card">
-                    <div class="visiting-card-content">
-                        <h1>Visiting Hours</h1>
+                    <div class="visiting-card-content" itemscope itemtype="https://schema.org/PostalAddress">
+                        <h1 role="heading">Visiting Hours</h1>
                         <p>Monday to Friday: 8am to 5pm</p>
                         <p>Saturday to Sunday: 10am to 6pm</p>
                         <h1>Address</h1>
-                        <p>123 Main St</p>
-                        <p>Ottawa, ON</p>
+                        <p itemprop="streetAddress">123 Main St</p>
+                        <p itemprop="addressRegion">Ottawa, ON</p>
                     </div>
                 </div>
                 <div class="map-card">
@@ -93,14 +93,14 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <footer role="contentinfo">
             <div class="footer-container">
                 <div class="footer-text">
                     <p>&copy; Mikaela Roberts, 2023</p>
                     <p>All images courtesy of <a href="http://elements.envato.com">Envato Elements</a> and <a href="http://pexels.com">Pexels.com</a>
                 </div>
                 <div class="footer-logo">
-                    <img src="/images/sloth-logo.png" alt="Logo">
+                    <img src="/images/sloth-logo.png" alt="Company Logo, a cartoon of a sloth hanging on a branch">
                 </div>
             </div>
         </footer>
