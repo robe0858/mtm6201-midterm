@@ -1,3 +1,5 @@
+
+/* These will be my main colours */
 :root {
     --primary-color: #71744d;
     --secondary-color: #E9DFCD;
@@ -46,6 +48,7 @@ body {
     background-color: var(--primary-color);
 }
 
+/* styling for main nav */
 ul {
     list-style-type: none;
     text-align: center;
@@ -72,6 +75,7 @@ li a:active {
     font-weight: bold;
 }
 
+/* I added an active page class to add this styling to the nav link of the current active page, to help the user know which page they are currently on. */
 .active-page {
     background-color: var(--secondary-color);
     color: var(--dark-color);
@@ -117,6 +121,7 @@ a:hover {
     justify-content: space-between;
 }
 
+/* the card class uses flex column to ensure all elements inside the card are aligned down a linear column. This is important because when moving to desktop styling, column changes to row for certain cards. */
 .card {
     display: flex;
     flex-direction: column;
@@ -157,6 +162,7 @@ a:hover {
     text-decoration: none;
     border-radius: 20px;
     padding: 10px 30px;
+    /* this transition, when paired with button:hover, will add a subtle animation when the user is hovering as the colours change. */
     transition: all 0.5s ease-in-out;
 }
 
@@ -165,7 +171,7 @@ a:hover {
     color: var(--dark-color);
 }
 
-
+/* this styling will ensure that the img will stay within the container */
 .contact-card-img {
     width: 100%;
 }
@@ -205,6 +211,7 @@ a:hover {
     transition: transform 0.2s ease-in-out;
 }
 
+/* this, paired with the transition added to the .rescue-card and .release-card classes, will add a subtle yet noticeable animation when the user is hovering over the cards, making them grow slightly in size. It adds a little bit of interest to the page and makes it feel less static and more interactive. */
 .rescue-card:hover, .release-card:hover {
     transform: scale(1.015);
 }
