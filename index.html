@@ -34,6 +34,7 @@
         </div>
         <div class="image-banner">
             <picture role="img">
+                <!-- here I am using picture, source and srcset for proper image optimization and responsiveness. I am adding 4 different versions of the same image: one for low-res mobile, high-res mobile, low-res desktop, and high-res desktop. -->
                 <source srcset="images/mobile/low-resolution/baby-sloth-320_x_213.jpeg,
                 images/mobile/high-resolution/baby-sloth-759_x_506.jpeg 2x"
                 media="(max-width: 759px)">
@@ -57,9 +58,11 @@
 
     <div class="main-content" id="main-content" role="main">
         <div class="wrapper content-cards-outer">
+            <!-- adding a div with class of content-cards-outer will be important when styling for responsiveness. For mobile styling, the cards will have a flex direction of column, whereas for desktop, the flex direction will be row. A similar technique will be used for the content WITHIN the cards on other pages. -->
             <div class="card" role="region">
                 <div class="about-card-img">
                     <picture role="img">
+                        <!-- here I am using picture, source and srcset for proper image optimization and responsiveness. I am adding 4 different versions of the same image: one for low-res mobile, high-res mobile, low-res desktop, and high-res desktop. -->
                         <source srcset="images/mobile/low-resolution/sloth-2-320_x_213.jpeg,
                         images/mobile/high-resolution/sloth-2-759_x_506.jpeg 2x"
                         media="(max-width: 759px)">
@@ -82,6 +85,7 @@
             <div class="card" role="region">
                 <div class="contact-card-img">
                     <picture role="img">
+                        <!-- here I am using picture, source and srcset for proper image optimization and responsiveness. I am adding 4 different versions of the same image: one for low-res mobile, high-res mobile, low-res desktop, and high-res desktop. -->
                         <source srcset="images/mobile/low-resolution/sloth-3-320_x_213.jpeg,
                         images/mobile/high-resolution/sloth-3-759_x_506.jpeg 2x"
                         media="(max-width: 759px)">
