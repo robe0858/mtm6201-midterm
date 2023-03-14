@@ -199,7 +199,7 @@ a:hover {
     padding: 20px;
     max-width: 600px;
     margin: 20px;
-    background-color: #a4a77a;
+    background-color: var(--primary-color);
     padding-bottom: 40px;
     flex: 1;
     transition: transform 0.2s ease-in-out;
@@ -242,7 +242,7 @@ a:hover {
     padding: 20px;
     max-width: 600px;
     margin: 20px;
-    background-color: #a4a77a;
+    background-color: var(--primary-color);
     padding-bottom: 40px;
     flex: 1;
     transition: transform 0.2s ease-in-out;
@@ -322,7 +322,7 @@ a:hover {
     padding: 20px;
     max-width: 600px;
     margin: 20px;
-    background-color: #a4a77a;
+    background-color: var(--primary-color);
     padding-bottom: 40px;
     flex: 1;
     color: var(--light-color);
@@ -379,7 +379,7 @@ button[type="submit"] {
     padding: 20px;
     max-width: 600px;
     margin: 20px;
-    background-color: #a4a77a;
+    background-color: var(--primary-color);
     padding-bottom: 40px;
     flex: 1;
     color: var(--light-color);
@@ -539,11 +539,15 @@ footer {
     justify-content: space-between;
 }
 
+/* I wanted to add a fun and noticeable animation here, so I decided to make the logo, which also happens to be a circular shape, roate one full time over the course of 8 seconds, infinitely */
+
 .footer-logo img {
     width: 100px;
     height: auto;
     animation: rotate 8s linear infinite;
 }
+
+/* I used the keyframes here to make the logo rotate one time (360 degrees) over the course of 8 seconds */
 
 @keyframes rotate {
     0% {
